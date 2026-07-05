@@ -3,10 +3,13 @@ name: 07 - Using Expressions
 on:
     push:
     workflow_dispatch:
-        inputs:
+        inputs:        
             debug:
+                description: Enable debug mode
+                required: false
                 type: boolean
                 default: false
+
 
 jobs:
     echo:
